@@ -1,0 +1,112 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "fields": {
+        "company": "SpaceEx",
+        "featured": false,
+        "price": 345000,
+        "name": "Earth Orbit- Experience the Blue Planet from over 300 km up",
+        "image": [
+          {
+            "url": "https: //images.pexels.com/photos/256379/pexels-photo-256379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "fields": {
+        "company": "SpaceEx",
+        "featured": true,
+        "price": 845000,
+        "name": "Mars and Beyond - The road to make Humanity multiplanetary",
+        "image": [
+          {
+            "url": "https://images.pexels.com/photos/73910/mars-mars-rover-space-travel-robot-73910.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "fields": {
+        "company": "SpaceEx",
+        "featured": false,
+        "price": 545000,
+        "name": "Moon - Returning humans to our Lunar Neighbor",
+        "image": [
+          {
+            "url": "https://images.pexels.com/photos/684441/pexels-photo-684441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "fields": {
+        "company": "SpaceEx",
+        "featured": false,
+        "price": 545000,
+        "name": "Space Station - Transporting Humans to the orbiting laboratory in the sky",
+        "image": [
+          {
+            "url": "https://images.pexels.com/photos/41006/satellite-soyuz-spaceship-space-station-41006.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          }
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "fields": {
+        "company": "SpaceEx",
+        "featured": false,
+        "price": 545000,
+        "name": "Space Station - Transporting Humans to the orbiting laboratory in the sky",
+        "image": [
+          {
+            "url": "https://images.pexels.com/photos/41006/satellite-soyuz-spaceship-space-station-41006.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "fields": {
+        "company": "Blue Origin",
+        "featured": true,
+        "price": 233000,
+        "name": "Apollo 11 landing site, Sea of Tranquility, Moon",
+        "image": [
+          {
+            "url": "https://images.pexels.com/photos/39896/space-station-moon-landing-apollo-15-james-irwin-39896.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "fields": {
+        "company": "Virgin Galactic",
+        "featured": true,
+        "price": 545000,
+        "name": "Valles Marineris, Mars",
+        "image": [
+          {
+            "url": "https://images.pexels.com/photos/732894/pexels-photo-732894.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+          }
+        ]
+      }
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
