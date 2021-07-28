@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500&family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
 /*
 =============== 
 Variables
@@ -8,11 +12,13 @@ Variables
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(21, 91%, 17%);
-  --clr-primary-2: hsl(21, 84%, 25%);
+  /* --clr-primary-2: hsl(21, 84%, 25%); */
   --clr-primary-3: hsl(21, 81%, 29%);
   --clr-primary-4: hsl(21, 77%, 34%);
   /* primary/main color */
-  --clr-primary-5: hsl(21, 62%, 45%);
+  --clr-primary-5: hsl(210, 22%, 49%);
+  --clr-primary-2: hsl(211, 39%, 23%);
+  /* --clr-primary-5: hsl(21, 62%, 45%); */
   /* lighter shades of primary color */
   --clr-primary-6: hsl(21, 57%, 50%);
   --clr-primary-7: hsl(21, 65%, 59%);
@@ -60,8 +66,12 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Baloo Chettan 2', cursive;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  /* -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell */
+  /* 'Open Sans', 'Helvetica Neue', sans-serif; */
   background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -127,7 +137,9 @@ p {
   display: block;
 }
 .text-slanted {
-  font-family: 'Kaushan Script', cursive;
+  /* font-family: 'Kaushan Script', cursive; */
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
 }
 .section-center {
   width: 90vw;
@@ -150,7 +162,7 @@ p {
   cursor: pointer;
 }
 .btn:hover {
-  background: var(--clr-primary-7);
+  background: var(--clr-grey-9);
   color: var(--clr-black);
 }
 .section-loading {
@@ -185,7 +197,11 @@ Navbar
   align-items: center;
   justify-content: center;
 }
-
+.text-logo {
+  font-size: 1.2rem;
+  color: var(--clr-white);
+  letter-spacing: var(--spacing);
+}
 .nav-center {
   width: 90vw;
   max-width: var(--max-width);
@@ -211,7 +227,7 @@ Navbar
   transition: var(--transition);
 }
 .toggle-nav:hover {
-  background: var(--clr-primary-3);
+  background: var(--clr-primary-2);
 }
 .toggle-container {
   position: relative;
@@ -242,6 +258,13 @@ Navbar
   .nav-center {
     position: relative;
   }
+  .text-logo {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+  }
   .nav-logo {
     position: absolute;
     top: 50%;
@@ -253,23 +276,32 @@ Navbar
   }
   .nav-links {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: capitalize;
   }
   .nav-link {
     color: var(--clr-white);
+    text-transform: uppercase;
     margin-right: 3rem;
     letter-spacing: var(--spacing);
     transition: var(--transition);
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
+
   .nav-link:hover {
-    color: var(--clr-primary-5);
+    color: var(--clr-grey-8);
+    font-size: 1.3rem;
   }
 }
 @media screen and (min-width: 992px) {
   .nav-logo {
     left: 50%;
+  }
+  .nav-link {
+    font-size: 1.25rem;
+  }
+  .text-logo {
+    font-size: 1.5rem;
   }
 }
 /* page navbar */
@@ -291,12 +323,13 @@ Hero
   min-height: 100vh;
   margin-top: -6rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./images/main-bcg.jpeg) center/cover;
+    url(./images/main-bcg.jpg) center/cover;
   display: grid;
   place-items: center;
   color: var(--clr-white);
 }
 .hero-container {
+  margin-top: 14rem;
   width: 90vw;
   max-width: var(--max-width);
 }
@@ -390,7 +423,8 @@ Sidebar
 }
 .sidebar-link {
   font-size: 1.5rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
   color: var(--clr-grey-1);
 }
 .sidebar-link i {

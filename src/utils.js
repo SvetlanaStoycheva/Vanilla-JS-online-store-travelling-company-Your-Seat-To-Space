@@ -1,11 +1,11 @@
 const apiInfo = 'http://localhost:3000';
 const allProductsUrl = 'http://localhost:3000/posts';
-const singleProduct = 'http://localhost:3000/posts/1';
+const singleProductUrl = 'http://localhost:3000/posts/1';
 // const allProductsUrl = 'https://course-api.com/javascript-store-products';
 // temporary single product
 // 'https://course-api.com/javascript-store-single-product?id=rec43w3ipXvP28vog'
-const singleProductUrl =
-  'https://course-api.com/javascript-store-single-product';
+// const singleProductUrl =
+//   'https://course-api.com/javascript-store-single-product';
 
 const getElement = (selection) => {
   const element = document.querySelector(selection);
