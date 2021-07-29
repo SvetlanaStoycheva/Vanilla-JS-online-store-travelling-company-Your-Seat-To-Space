@@ -314,6 +314,9 @@ Navbar
 .page .toggle-cart {
   color: var(--clr-grey-1);
 }
+.text-logo-page {
+  color: var(--clr-primary-2);
+}
 /*
 =============== 
 Hero
@@ -654,13 +657,45 @@ product
 About Page
 ===============
 */
+.about-container {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.about-img {
+  display: block;
+  width: 90vw;
+  max-width: 45em;
+  margin: 0 auto;
+  height: 20rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+}
 .about-text {
   line-height: 2;
   max-width: 45em;
   margin: 0 auto;
   margin-top: 2rem;
+  font-size: 1.1rem;
+  color: var(--clr-grey-5);
 }
-
+@media screen and (min-width: 992px) {
+  .about-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2.5rem;
+    align-items: center;
+  }
+  .about-img {
+    max-width: 550px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-img {
+    max-width: 650px;
+  }
+}
 /*
 =============== 
 Products Page
