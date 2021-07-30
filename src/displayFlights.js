@@ -1,7 +1,7 @@
 import { formatPrice } from './utils.js';
 import { addToCart } from './cart/setupCart.js';
 const display = (flights, DOMContainer) => {
-  console.log(flights, DOMContainer);
+  // console.log(flights, DOMContainer);
   DOMContainer.innerHTML = flights
     .map((item) => {
       const { id, name, url, price } = item;

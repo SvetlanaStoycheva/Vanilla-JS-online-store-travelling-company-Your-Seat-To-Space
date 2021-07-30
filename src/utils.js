@@ -36,6 +36,15 @@ const setStorageItem = (name, item) => {
   localStorage.setItem(name, JSON.stringify(item));
 };
 
+const sliderImages = [
+  { src: './images/slider-1.jpg' },
+  { src: './images/slider-2.jpg' },
+  { src: './images/slider-3.jpg' },
+  { src: './images/slider-4.jpg' },
+  { src: './images/slider-5.jpg' },
+  { src: './images/slider-6.jpg' },
+];
+
 export {
   allFlightsUrl,
   singleFlightUrl,
@@ -43,4 +52,5 @@ export {
   formatPrice,
   getStorageItem,
   setStorageItem,
+  sliderImages,
 };
