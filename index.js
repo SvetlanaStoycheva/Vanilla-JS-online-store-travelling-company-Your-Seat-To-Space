@@ -14,9 +14,9 @@ async function init() {
   const flights = await fetchFlights();
   if (flights) {
     setupStore(flights);
-    console.log(store);
+    // console.log(store);
     const featured = store.filter((item) => item.featured === true);
-    display(featured, getElement('.featured-center'));
+    display(featured, getElement('.featured-center'), true);
   }
 }
 

@@ -1,6 +1,6 @@
 import { formatPrice } from './utils.js';
 import { addToCart } from './cart/setupCart.js';
-const display = (flights, DOMContainer) => {
+const display = (flights, DOMContainer, filters) => {
   // console.log(flights, DOMContainer);
   DOMContainer.innerHTML = flights
     .map((item) => {

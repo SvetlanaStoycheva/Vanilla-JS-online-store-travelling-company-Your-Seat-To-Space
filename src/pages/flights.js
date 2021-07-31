@@ -10,5 +10,16 @@ import setupPrice from '../filters/price.js';
 
 // specific imports
 import { store } from '../store.js';
-import display from '../displayProducts.js';
+import display from '../displayFlights.js';
 import { getElement } from '../utils.js';
+
+const flightsContainer = getElement('.products-container');
+
+display(store, flightsContainer);
+if (store) {
+  getElement('.page-loading').style.display = 'none';
+}
+
+setupSearch(store);
+setupCompanies(store);
+setupPrice(store);
