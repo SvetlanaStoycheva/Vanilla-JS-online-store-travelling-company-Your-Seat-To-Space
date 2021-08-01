@@ -1,6 +1,6 @@
 const apiInfo = 'http://localhost:3000';
 const allFlightsUrl = 'http://localhost:3000/flights';
-const singleFlightUrl = 'http://localhost:3000/posts/1';
+const singleFlightUrl = 'http://localhost:3000/flights/';
 // const allProductsUrl = 'https://course-api.com/javascript-store-products';
 // temporary single product
 // 'https://course-api.com/javascript-store-single-product?id=rec43w3ipXvP28vog'

@@ -1,8 +1,6 @@
-import { allFlightsUrl } from './utils.js';
-
-const fetchFlights = async () => {
+const fetchFlights = async (url) => {
   try {
-    const response = await fetch(allFlightsUrl);
+    const response = await fetch(url);
     const data = await response.json();
     return data;
   } catch (error) {

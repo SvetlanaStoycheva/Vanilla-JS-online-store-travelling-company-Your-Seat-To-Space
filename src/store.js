@@ -22,5 +22,9 @@ const setupStore = (flights) => {
   });
   setStorageItem('store', store);
 };
-const findProduct = () => {};
+const findProduct = (id) => {
+  id = Number(id);
+  const currentFlight = store.find((item) => id === item.id);
+  return currentFlight;
+};
 export { store, setupStore, findProduct };

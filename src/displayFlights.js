@@ -10,7 +10,7 @@ const display = (flights, DOMContainer, filters) => {
           <div class="product-container">
             <img src="${url}" class="product-img img" alt="${name}" />
             <div class="product-icons">
-              <a href="flight.html" class="product-icon">
+              <a href="flight.html?id=${id}" class="product-icon">
                 <i class="fas fa-search"></i
               ></a>
               <button class="product-cart-btn product-icon" data-id="${id}">

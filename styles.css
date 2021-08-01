@@ -916,6 +916,9 @@ Single Product Page
   font-size: 1.25rem;
   font-weight: 500;
 }
+.single-product-experience {
+  margin-bottom: -0.5rem;
+}
 
 .product-color {
   display: inline-block;

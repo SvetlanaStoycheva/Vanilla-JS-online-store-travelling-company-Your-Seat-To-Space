@@ -19,7 +19,7 @@ display(store, flightsContainer);
 if (store) {
   getElement('.page-loading').style.display = 'none';
 }
-
+// filters
 setupSearch(store);
 setupCompanies(store);
 setupPrice(store);

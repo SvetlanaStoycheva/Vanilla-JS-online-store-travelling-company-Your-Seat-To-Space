@@ -7,11 +7,11 @@ import './src/slider.js';
 import fetchFlights from './src/fetchFlights.js';
 import { setupStore, store } from './src/store.js';
 import display from './src/displayFlights.js';
-import { getElement } from './src/utils.js';
+import { getElement, allFlightsUrl } from './src/utils.js';
 import { startSlider } from './src/slider.js';
 
 async function init() {
-  const flights = await fetchFlights();
+  const flights = await fetchFlights(allFlightsUrl);
   if (flights) {
     setupStore(flights);
     // console.log(store);
