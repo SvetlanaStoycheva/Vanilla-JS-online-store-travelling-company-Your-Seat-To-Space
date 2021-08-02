@@ -16,7 +16,7 @@ async function init() {
     setupStore(flights);
     // console.log(store);
     const featured = store.filter((item) => item.featured === true);
-    display(featured, getElement('.featured-center'), true);
+    display(featured, getElement('.featured-center'));
   }
 }
 

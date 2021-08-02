@@ -5,6 +5,7 @@ const display = (flights, DOMContainer, filters) => {
   DOMContainer.innerHTML = flights
     .map((item) => {
       const { id, name, url, price } = item;
+
       return `
    <article class="product">
           <div class="product-container">
@@ -26,10 +27,13 @@ const display = (flights, DOMContainer, filters) => {
     `;
     })
     .join('');
+
+  if (filters) return;
+
   DOMContainer.addEventListener('click', function (e) {
     const parent = e.target.parentElement;
     if (parent.classList.contains('product-cart-btn')) {
-      addToCart(parent.dataset.id);
+      addToCart(Number(parent.dataset.id));
     }
   });
 };

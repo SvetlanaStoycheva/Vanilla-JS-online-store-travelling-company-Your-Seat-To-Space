@@ -16,12 +16,12 @@ const setupCompanies = (store) => {
   getElement('.companies').addEventListener('click', function (e) {
     // console.log(e.target.textContent);
     if (e.target.textContent === 'all') {
-      display(store, getElement('.products-container'));
+      display(store, getElement('.products-container'), true);
     } else {
       const newStore = store.filter(
         (item) => item.company === e.target.textContent
       );
-      display(newStore, getElement('.products-container'));
+      display(newStore, getElement('.products-container'), true);
     }
   });
 };

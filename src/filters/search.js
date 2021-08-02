@@ -12,7 +12,7 @@ const setupSearch = (store) => {
       name = name.toLowerCase();
       return name.startsWith(value);
     });
-    display(newStore, getElement('.products-container'));
+    display(newStore, getElement('.products-container'), true);
 
     if (newStore.length < 1) {
       getElement('.products-container').innerHTML = `

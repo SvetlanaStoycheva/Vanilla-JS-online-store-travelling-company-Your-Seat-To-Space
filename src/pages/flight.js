@@ -20,7 +20,7 @@ import fetchFlights from '../fetchFlights.js';
 // const cartBtn = getElement('.addToCartBtn');
 
 const url = document.URL;
-const id = url.substring(url.lastIndexOf('?') + 1)[3];
+const id = Number(url.substring(url.lastIndexOf('?') + 1)[3]);
 
 const init = async () => {
   const singleFlight = await fetchFlights(`${singleFlightUrl}${id}`);
@@ -61,7 +61,7 @@ function displaySingleFlight(mission) {
               .join('')}
             <div class="single-product-colors"></div>
             <p class="single-product-desc">${desc}</p>
-            <button class="addToCartBtn btn" data-id="${id}">add to cart</button>
+            <button class="addToCartBtn btn" data-id=${id}>add to cart</button>
           </div>
         </article>
       </div>
