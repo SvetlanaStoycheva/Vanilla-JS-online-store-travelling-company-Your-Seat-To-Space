@@ -702,6 +702,11 @@ About Page
 Slider
 ===============
 */
+.win-container {
+  margin: 2rem auto;
+  display: grid;
+  /* gap: 1rem 2rem; */
+}
 .slider {
   position: relative;
   width: 90vw;
@@ -737,14 +742,13 @@ Slider
 }
 
 .win-info {
-  max-width: 80%;
+  max-width: 80vw;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 992px) {
   .win-container {
-    display: flex;
     grid-template-columns: 1.4fr 0.6fr;
-    column-gap: 3rem;
     align-items: center;
   }
   .slider {

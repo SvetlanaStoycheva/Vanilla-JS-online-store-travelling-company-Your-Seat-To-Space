@@ -1,5 +1,8 @@
 const apiInfo = 'http://localhost:3000';
-const allFlightsUrl = 'http://localhost:3000/flights';
+
+const allFlightsUrl =
+  'https://sweta-serverless-functions.netlify.app/api/2-basic-api';
+// const allFlightsUrl = 'http://localhost:3000/flights';
 const singleFlightUrl = 'http://localhost:3000/flights/';
 // const allProductsUrl = 'https://course-api.com/javascript-store-products';
 // temporary single product

@@ -12,6 +12,7 @@ import { startSlider } from './src/slider.js';
 
 async function init() {
   const flights = await fetchFlights(allFlightsUrl);
+
   if (flights) {
     setupStore(flights);
     // console.log(store);
