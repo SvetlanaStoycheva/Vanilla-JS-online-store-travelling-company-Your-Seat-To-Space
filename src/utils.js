@@ -1,14 +1,9 @@
-const apiInfo = 'http://localhost:3000';
+// const apiInfo = 'http://localhost:3000';
 
 const allFlightsUrl =
   'https://sweta-serverless-functions.netlify.app/api/2-basic-api';
 // const allFlightsUrl = 'http://localhost:3000/flights';
 const singleFlightUrl = 'http://localhost:3000/flights/';
-// const allProductsUrl = 'https://course-api.com/javascript-store-products';
-// temporary single product
-// 'https://course-api.com/javascript-store-single-product?id=rec43w3ipXvP28vog'
-// const singleProductUrl =
-//   'https://course-api.com/javascript-store-single-product';
 
 const getElement = (selection) => {
   const element = document.querySelector(selection);

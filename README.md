@@ -1,6 +1,6 @@
 ## Vanilla JS Project - Space Travel Company Website - Your Seat To Space
 
-- See the project on Netlify
+- [See the project on Netlify](https://your-seat-to-space.netlify.app)
 - Inspiration from John Smilga Vanilla JS project Comfy
 - Responsive CSS design: On a small screen we have a sidebar.
 - Fetching the data from mock json-server.
@@ -12,12 +12,15 @@
 - Simple about page
 - Shopping cart: Once the product is in the cart we can change its amount or remove it from the cart. Shopping cart items are saved in locale storage and user's flight choices can be seen every time user visit the page.
 - Using Intl.NumberFormat() to format the prices
-- Using json-server for mock Api. JSON Server is a Node Module that
-  you can use to create demo rest json webservice.
-  [getting started with json-server](https://www.npmjs.com/package/json-server#getting-started)
-  - local install: npm i json-server
-  - create db.json file with some data
-  - npx json-server --watch db.json
+- API
+  - First version:
+    - Using json-server for mock Api. JSON Server is a Node Module that you can use to create demo rest json webservice.
+      [getting started with json-server](https://www.npmjs.com/package/json-server#getting-started)
+    - local install: npm i json-server
+    - create db.json file with some data
+    - npx json-server --watch db.json
+  - Second version:
+    - Using Netlify serverless functions
 
 <p align-items: center>
     <img src='./images/Screenshot-project-01.png' width='500'>

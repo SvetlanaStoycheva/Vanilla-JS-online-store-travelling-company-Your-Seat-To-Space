@@ -16,9 +16,10 @@ const setupStore = (flights) => {
       price,
       name,
       image,
+      desc,
     } = item.fields;
     const { url } = item.fields.image[0];
-    return { id, company, expirianceLevel, featured, price, name, url };
+    return { id, company, expirianceLevel, featured, price, name, url, desc };
   });
   setStorageItem('store', store);
 };

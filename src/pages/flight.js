@@ -4,30 +4,28 @@ import '../cart/toggleCart.js';
 import '../cart/setupCart.js';
 // specific
 import { addToCart } from '../cart/setupCart.js';
-import { singleFlightUrl, getElement, formatPrice } from '../utils.js';
+import { allFlightsUrl, getElement, formatPrice } from '../utils.js';
 import fetchFlights from '../fetchFlights.js';
-
-// selections
-// const loading = getElement('.page-loading');
-// const centerDOM = getElement('.single-product-center');
-// const pageTitleDOM = getElement('.page-hero-title');
-// const imgDOM = getElement('.single-product-img');
-// const titleDOM = getElement('.single-product-title');
-// const companyDOM = getElement('.single-product-company');
-// const priceDOM = getElement('.single-product-price');
-// const colorsDOM = getElement('.single-product-colors');
-// const descDOM = getElement('.single-product-desc');
-// const cartBtn = getElement('.addToCartBtn');
+import { store } from '../store.js';
 
 const url = document.URL;
 const id = Number(url.substring(url.lastIndexOf('?') + 1)[3]);
 
-const init = async () => {
-  const singleFlight = await fetchFlights(`${singleFlightUrl}${id}`);
+const singleFlight = store.find((item) => item.id === id);
 
-  if (singleFlight) {
-    getElement('.page-loading').style.display = 'none';
-  }
+// const init = async () => {
+//   const singleFlight = await fetchFlights(`${allFlightsUrl}/${id}`);
+
+//   if (singleFlight) {
+//     getElement('.page-loading').style.display = 'none';
+//   }
+//   displaySingleFlight(singleFlight);
+//   getElement('.addToCartBtn').addEventListener('click', function () {
+//     addToCart(id);
+//   });
+// };
+const init = () => {
+  getElement('.page-loading').style.display = 'none';
   displaySingleFlight(singleFlight);
   getElement('.addToCartBtn').addEventListener('click', function () {
     addToCart(id);
@@ -37,9 +35,9 @@ const init = async () => {
 window.addEventListener('DOMContentLoaded', init);
 
 function displaySingleFlight(mission) {
-  const { id, fields } = mission;
-  const { company, desc, expirianceLevel, name, price } = fields;
-  const { url } = fields.image[0];
+  // const { id, fields } = mission;
+  const { company, desc, expirianceLevel, name, price, url } = mission;
+  // const { url } = fields.image[0];
 
   getElement('.single-product').innerHTML = `
   <div class="section-center single-product-center">
